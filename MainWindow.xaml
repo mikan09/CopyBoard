@@ -1,0 +1,100 @@
+﻿<Window x:Class="CopyBoard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CopyBoard"
+        mc:Ignorable="d"
+        Title="CopyBoard" Height="500" Width="200" ResizeMode="CanResizeWithGrip"
+        Closing="Window_Closing">
+    <Grid>
+        <!--Tabを配置-->
+        <TabControl x:Name="ContentsTab" Margin="3,3,3,3">
+            <TabItem Header="  _1  ">
+                <Grid>
+                    <!--高さ等間隔でボタンを配置-->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    
+                    <!--メモ：Grid.Row="n"(行番号)は0始まり-->
+                    <Button x:Name="CpyBtn1" Content="Button" Grid.Row="0"  MouseUp="CpyBtn1_MouseUp"  Click="CpyBtn1_Click"  KeyUp="CpyBtn1_KeyUp"  />
+                    <Button x:Name="CpyBtn2" Content="Button" Grid.Row="1"  MouseUp="CpyBtn2_MouseUp"  Click="CpyBtn2_Click"  KeyUp="CpyBtn2_KeyUp"  />
+                    <Button x:Name="CpyBtn3" Content="Button" Grid.Row="2"  MouseUp="CpyBtn3_MouseUp"  Click="CpyBtn3_Click"  KeyUp="CpyBtn3_KeyUp"  />
+                    <Button x:Name="CpyBtn4" Content="Button" Grid.Row="3"  MouseUp="CpyBtn4_MouseUp"  Click="CpyBtn4_Click"  KeyUp="CpyBtn4_KeyUp"  />
+                    <Button x:Name="CpyBtn5" Content="Button" Grid.Row="4"  MouseUp="CpyBtn5_MouseUp"  Click="CpyBtn5_Click"  KeyUp="CpyBtn5_KeyUp"  />
+                    <Button x:Name="CpyBtn6" Content="Button" Grid.Row="5"  MouseUp="CpyBtn6_MouseUp"  Click="CpyBtn6_Click"  KeyUp="CpyBtn6_KeyUp"  />
+                    <Button x:Name="CpyBtn7" Content="Button" Grid.Row="6"  MouseUp="CpyBtn7_MouseUp"  Click="CpyBtn7_Click"  KeyUp="CpyBtn7_KeyUp"  />
+                    <Button x:Name="CpyBtn8" Content="Button" Grid.Row="7"  MouseUp="CpyBtn8_MouseUp"  Click="CpyBtn8_Click"  KeyUp="CpyBtn8_KeyUp"  />
+                    <Button x:Name="CpyBtn9" Content="Button" Grid.Row="8"  MouseUp="CpyBtn9_MouseUp"  Click="CpyBtn9_Click"  KeyUp="CpyBtn9_KeyUp"  />
+                    <Button x:Name="CpyBtn10" Content="Button" Grid.Row="9" MouseUp="CpyBtn10_MouseUp" Click="CpyBtn10_Click" KeyUp="CpyBtn10_KeyUp" />
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="  _2  ">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Button x:Name="CpyBtn11" Content="Button" Grid.Row="0" MouseUp="CpyBtn1_MouseUp"  Click="CpyBtn1_Click"  KeyUp="CpyBtn1_KeyUp"  />
+                    <Button x:Name="CpyBtn12" Content="Button" Grid.Row="1" MouseUp="CpyBtn2_MouseUp"  Click="CpyBtn2_Click"  KeyUp="CpyBtn2_KeyUp"  />
+                    <Button x:Name="CpyBtn14" Content="Button" Grid.Row="3" MouseUp="CpyBtn4_MouseUp"  Click="CpyBtn3_Click"  KeyUp="CpyBtn3_KeyUp"  />
+                    <Button x:Name="CpyBtn15" Content="Button" Grid.Row="4" MouseUp="CpyBtn5_MouseUp"  Click="CpyBtn4_Click"  KeyUp="CpyBtn4_KeyUp"  />
+                    <Button x:Name="CpyBtn16" Content="Button" Grid.Row="5" MouseUp="CpyBtn6_MouseUp"  Click="CpyBtn5_Click"  KeyUp="CpyBtn5_KeyUp"  />
+                    <Button x:Name="CpyBtn17" Content="Button" Grid.Row="6" MouseUp="CpyBtn7_MouseUp"  Click="CpyBtn6_Click"  KeyUp="CpyBtn6_KeyUp"  />
+                    <Button x:Name="CpyBtn13" Content="Button" Grid.Row="2" MouseUp="CpyBtn3_MouseUp"  Click="CpyBtn7_Click"  KeyUp="CpyBtn7_KeyUp"  />
+                    <Button x:Name="CpyBtn18" Content="Button" Grid.Row="7" MouseUp="CpyBtn8_MouseUp"  Click="CpyBtn8_Click"  KeyUp="CpyBtn8_KeyUp"  />
+                    <Button x:Name="CpyBtn19" Content="Button" Grid.Row="8" MouseUp="CpyBtn9_MouseUp"  Click="CpyBtn9_Click"  KeyUp="CpyBtn9_KeyUp"  />
+                    <Button x:Name="CpyBtn20" Content="Button" Grid.Row="9" MouseUp="CpyBtn10_MouseUp" Click="CpyBtn10_Click" KeyUp="CpyBtn10_KeyUp" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="  _3  ">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Button x:Name="CpyBtn21" Content="Button" Grid.Row="0" MouseUp="CpyBtn1_MouseUp"  Click="CpyBtn1_Click"  KeyUp="CpyBtn1_KeyUp"  />
+                    <Button x:Name="CpyBtn22" Content="Button" Grid.Row="1" MouseUp="CpyBtn2_MouseUp"  Click="CpyBtn2_Click"  KeyUp="CpyBtn2_KeyUp"  />
+                    <Button x:Name="CpyBtn23" Content="Button" Grid.Row="2" MouseUp="CpyBtn3_MouseUp"  Click="CpyBtn3_Click"  KeyUp="CpyBtn3_KeyUp"  />
+                    <Button x:Name="CpyBtn24" Content="Button" Grid.Row="3" MouseUp="CpyBtn4_MouseUp"  Click="CpyBtn4_Click"  KeyUp="CpyBtn4_KeyUp"  />
+                    <Button x:Name="CpyBtn25" Content="Button" Grid.Row="4" MouseUp="CpyBtn5_MouseUp"  Click="CpyBtn5_Click"  KeyUp="CpyBtn5_KeyUp"  />
+                    <Button x:Name="CpyBtn26" Content="Button" Grid.Row="5" MouseUp="CpyBtn6_MouseUp"  Click="CpyBtn6_Click"  KeyUp="CpyBtn6_KeyUp"  />
+                    <Button x:Name="CpyBtn27" Content="Button" Grid.Row="6" MouseUp="CpyBtn7_MouseUp"  Click="CpyBtn7_Click"  KeyUp="CpyBtn7_KeyUp"  />
+                    <Button x:Name="CpyBtn28" Content="Button" Grid.Row="7" MouseUp="CpyBtn8_MouseUp"  Click="CpyBtn8_Click"  KeyUp="CpyBtn8_KeyUp"  />
+                    <Button x:Name="CpyBtn29" Content="Button" Grid.Row="8" MouseUp="CpyBtn9_MouseUp"  Click="CpyBtn9_Click"  KeyUp="CpyBtn9_KeyUp"  />
+                    <Button x:Name="CpyBtn30" Content="Button" Grid.Row="9" MouseUp="CpyBtn10_MouseUp" Click="CpyBtn10_Click" KeyUp="CpyBtn10_KeyUp" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
