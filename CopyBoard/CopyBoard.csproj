@@ -35,7 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Note.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -107,12 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Note.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Note_t.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="a66adc965bce96b2f0915b23831b4ef7_xxo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
